@@ -5,7 +5,7 @@ Official implementation (ICML 2026).
 ## 📋 Overview
 Our key contributions include:
 
-- **Metric 2 (Hessian Difference)**: A novel curvature-based metric achieving **97.59% AUC** on SD 1.5
+- **Metric 2 (Decoupled Metric)**: A novel curvature-based metric achieving **97.59% AUC** on SD 1.5
 - **DSM (Dynamical Singularity Metric)**: Tracks score dynamics across denoising steps
 - **Comprehensive Evaluation**: Tested on N=500 memorized + 500 non-memorized prompts
 
@@ -70,7 +70,7 @@ python detect.py \
     --nonmem_dataset "path/to/non_memorized_500.jsonl" \
     --output_dir "results/paper_results/"
 ```
-*Time: ~4.5 hours for 500+500 samples on RTX 3090.*
+
 
 ### 2️⃣ Analysis (Results & Plots)
 Generate AUC tables, ROC curves, and score distributions.
