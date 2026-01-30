@@ -93,7 +93,6 @@ python vis_1step_prediction.py \
 #### B. Scaling Law Plot (Figure 3)
 Requires separate data collection for all 50 timesteps.
 ```bash
-# 1. Collect data (~2.5 hours)
 python collect_wen_timeseries.py \
     --mem_dataset "path/to/memorized.jsonl" \
     --nonmem_dataset "path/to/non_memorized.jsonl" \
