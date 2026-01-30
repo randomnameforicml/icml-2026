@@ -22,19 +22,6 @@ Our key contributions include:
 **Model**: Stable Diffusion 1.5  
 **Evaluation**: 500 memorized + 500 non-memorized prompts
 
-## 🚀 Quick Start
-
-### Installation
-
-git clone https://github.com/anonymous-submission/diffusion-memorization-detection.git
-cd diffusion-memorization-detection
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Verify installation
-python test_installation.py
-```
 
 ### Quick Demo (3 minutes)
 
