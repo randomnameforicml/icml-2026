@@ -1,0 +1,57 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+
+# Jupyter
+.ipynb_checkpoints
+*.ipynb
+
+# Environment
+.env
+.venv
+env/
+venv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Model weights and large files
+*.safetensors
+*.ckpt
+*.pth
+*.pt
+sd15_model/
+sd2_model/
+*.bin
+
+# Data (keep structure, ignore large data)
+# Data (keep structure, ignore large data)
+det_outputs/**/*.jsonl
+results/**/*.jsonl
+examples/**/*.jpg
+examples/**/*.png
+vis_outputs/
+**/*.png
+
+# OS
+.DS_Store
+Thumbs.db
+*.log
+
+# Temp
+*.tmp
+temp/
+cache/
+
+# HuggingFace cache
+.cache/
+hub/
