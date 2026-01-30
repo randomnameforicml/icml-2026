@@ -130,31 +130,4 @@ diffusion-memorization-detection/
     └── .gitkeep                 # Output directory
 ```
 
-## 🔬 Metrics Implemented
 
-### 1. Metric 2 (Hessian Difference)
-Measures the difference in curvature between conditional and unconditional score functions:
-`Metric2 = ||∇(0.5||s_c||²) - ∇(0.5||s_u||²)||²`
-
-### 2. DSM (Dynamical Singularity Metric)
-Tracks the rate of change of conditional scores across denoising steps:
-`DSM_{t→t+1} = ||s_c(x_{t+1}) - s_c(x_t)||²`
-
-### 3. Baseline Methods
-- **Jeon et al.**: Hessian-vector product metric
-- **Wen et al.**: Guidance force magnitude
-
-## 🛠️ Technical Details
-
-### Hardware Requirements
-- GPU: NVIDIA GPU with ≥12GB VRAM (tested on RTX 3090)
-- RAM: ≥16GB
-- Storage: ≥10GB for model weights
-
-### Adjustable Parameters
-- `--limit N`: Use only first N samples (e.g., `--limit 100`)
-- `--num_inference_steps N`: Change denoising steps (default: 50)
-- `--batch_size N`: Currently only batch_size=1 is supported due to gradient computation
-
-## 📧 Contact
-For questions or issues, please open an issue on GitHub.
